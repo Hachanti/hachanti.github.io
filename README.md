@@ -9,9 +9,8 @@ Description of repository: This repository with hold my assignments
 
 ## My Interests  
 * Badminton
-* Art
- * Includes Painting and Drawing
+* Art 
 ## Websites I Recommend
-* [Google Slides](https://workspace.google.com/products/slides/):It is a very good website to use to make presentations
+* [Google Slides](https://workspace.google.com/products/slides/): It is a very good website to use to make presentations
 
 
