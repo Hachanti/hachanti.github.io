@@ -13,27 +13,41 @@ Description of repository: This repository with hold my assignments
 ## Websites I Recommend
 * [Google Slides](https://workspace.google.com/products/slides/): It is a very good website to use to make presentations
 
+# Mermaid Diagrams
+
 ```mermaid
 erDiagram
-PRODUCT {
-  Int PK Product_ID
-    String Product_Name
-    Boolean Product_Price
-}
-CUSTOMER {
-  Int PK Costomer_ID
-    String Costomer_Name
-}
-SALE {
-  Int Sale ID
-    Int FK Costomer_ID
-    Int FK Product_ID
-}
-INVENTORY {
-  Int Inventory ID
-    Int FK Product_ID
-    Int Quantity
-}
+    PRODUCT {
+        int ProductID PK
+        string Name
+        string Model
+        double Price
+    }
+
+    CUSTOMER {
+        int CustomerID PK
+        string Name
+        string Email
+    }
+
+    SALE {
+        int SaleID PK
+        date SaleDate
+        int CustomerID FK
+        int ProductID FK
+        int Quantity
+        double TotalPrice
+    }
+
+    INVENTORY {
+        int InventoryID PK
+        int ProductID FK
+        int Quantity
+    }
+     CUSTOMER ||--o{ SALE : makes
+    PRODUCT ||--o{ SALE : includes
+    PRODUCT ||--|| INVENTORY : has
+
 ```
 
 
