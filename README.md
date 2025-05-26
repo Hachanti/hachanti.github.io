@@ -13,8 +13,6 @@ Description of repository: This repository with hold my assignments
 ## Websites I Recommend
 * [Google Slides](https://workspace.google.com/products/slides/): It is a very good website to use to make presentations
 
-#NikeStore_ERD.md.
-
 ```mermaid
 erDiagram
 PRODUCT {
