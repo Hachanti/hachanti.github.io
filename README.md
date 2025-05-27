@@ -44,11 +44,11 @@ erDiagram
         int ProductID FK
         int Quantity
     }
-     CUSTOMER ||--o{ SALE : makes
+    CUSTOMER ||--o{ SALE : makes
     PRODUCT ||--o{ SALE : includes
     PRODUCT ||--|| INVENTORY : has
 
 ```
 ### Description
-#### 
+#### The relationship between the **Customer and Sale** is important to a business because that is what brings the business money. If the customer likes the product, then they will buy it, which causes a sale to happen, which is why this relationship is significant.
 
