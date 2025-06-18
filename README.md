@@ -7,7 +7,7 @@ Description of repository: This repository with hold my assignments
 
 # About Me
 
-## My Interests  
+## My Interests Â 
 * Badminton
 * Art 
 ## Websites I Recommend
@@ -17,65 +17,39 @@ Description of repository: This repository with hold my assignments
 
 ```mermaid
 erDiagram
-    PRODUCT {
-        int ProductID PK
-        string Name
-        string Model
-        double Price
-    }
+Â  Â  PRODUCT {
+Â  Â  Â  Â  int ProductID PK
+Â  Â  Â  Â  string Name
+Â  Â  Â  Â  string Model
+Â  Â  Â  Â  double Price
+Â  Â  }
 
-    CUSTOMER {
-        int CustomerID PK
-        string Name
-        string Email
-    }
+Â  Â  CUSTOMER {
+Â  Â  Â  Â  int CustomerID PK
+Â  Â  Â  Â  string Name
+Â  Â  Â  Â  string Email
+Â  Â  }
 
-    SALE {
-        int SaleID PK
-        date SaleDate
-        int CustomerID FK
-        int ProductID FK
-        int Quantity
-        double TotalPrice
-    }
+Â  Â  SALE {
+Â  Â  Â  Â  int SaleID PK
+Â  Â  Â  Â  date SaleDate
+Â  Â  Â  Â  int CustomerID FK
+Â  Â  Â  Â  int ProductID FK
+Â  Â  Â  Â  int Quantity
+Â  Â  Â  Â  double TotalPrice
+Â  Â  }
 
-    INVENTORY {
-        int InventoryID PK
-        int ProductID FK
-        int Quantity
-    }
-    CUSTOMER ||--o{ SALE : makes
-    PRODUCT ||--o{ SALE : includes
-    PRODUCT ||--|| INVENTORY : has
+Â  Â  INVENTORY {
+Â  Â  Â  Â  int InventoryID PK
+Â  Â  Â  Â  int ProductID FK
+Â  Â  Â  Â  int Quantity
+Â  Â  }
+Â  Â  CUSTOMER ||--o{ SALE : makes
+Â  Â  PRODUCT ||--o{ SALE : includes
+Â  Â  PRODUCT ||--|| INVENTORY : has
 
 ```
 ### Description
 #### The relationship between the Customer and Sale is important to a business because that is what brings the business money. If the customer likes the product, then they will buy it, which causes a sale to happen, which is why this relationship is significant.
 #### The relationship between the Sale and Product is important to a business because without the sale, the product would be useless (because it would not bring the business any money). And without the Product the business would not get any money (because it would have nothing to sell). This shows why this relationship is significant.
 #### The relationship between the Product and Inventory is important because without knowing how much of the product is there the business would not be able to properly price the items (Supply and Demand). This shows why this relationship is significant.
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>My Personal Introduction</title>
-    </head>
-    <Style>
-            body{
-                background-color:aliceblue
-            }
-        
-            h1{
-                color:rgb(127, 182, 255)
-            }
-
-            p{
-                color:blueviolet
-            }
-      </Style>
-    <body>
-        <h1>My name is Hansika</h1>
-        <p>I am a rising 10th grader. My favorite subjects in school are math and science. In my free time I like to read books and play badminton.</p>
-    </body>
-</html>
-
-
