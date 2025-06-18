@@ -54,3 +54,28 @@ erDiagram
 #### The relationship between the Sale and Product is important to a business because without the sale, the product would be useless (because it would not bring the business any money). And without the Product the business would not get any money (because it would have nothing to sell). This shows why this relationship is significant.
 #### The relationship between the Product and Inventory is important because without knowing how much of the product is there the business would not be able to properly price the items (Supply and Demand). This shows why this relationship is significant.
 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Personal Introduction</title>
+    </head>
+    <Style>
+            body{
+                background-color:aliceblue
+            }
+        
+            h1{
+                color:rgb(127, 182, 255)
+            }
+
+            p{
+                color:blueviolet
+            }
+      </Style>
+    <body>
+        <h1>My name is Hansika</h1>
+        <p>I am a rising 10th grader. My favorite subjects in school are math and science. In my free time I like to read books and play badminton.</p>
+    </body>
+</html>
+
+
