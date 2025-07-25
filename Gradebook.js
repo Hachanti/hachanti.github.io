@@ -21,25 +21,32 @@ function fetchGradeData() {
 }
 
 function populateGradebook(data) {
+  console.log("Populating gradebook with data:", data);
+  let tableElm = document.getElementById("Gradebook");
 
-    const tableBody = document.querySelector("#Gradebook tbody");
-    data.forEach((student) => {
-        const row = document.createElement("tr");
+  data.forEach(function (assignment) {
+    let row = document.createElement("tr");
+    let columns = [];
 
-        const nameCell = document.createElement("td");
-        nameCell.textContent = student.name;
-        row.appendChild(nameCell);
+    // First column: full name
+    columns.name = document.createElement("td");
+    columns.name.appendChild(
+      document.createTextNode(assignment.last_name + ", " + assignment.first_name)
+    );
 
-        student.assignments.forEach((score) => {
-            const cell = document.createElement("td");
-            cell.textContent = score;
-            row.appendChild(cell);
-        });
+    // Second column: grade
+    columns.grade = document.createElement("td");
+    columns.grade.appendChild(
+      document.createTextNode(assignment.total_grade)
+    );
 
-        tableBody.appendChild(row);
-    });
+    // Append both columns to the row
+    row.appendChild(columns.name);
+    row.appendChild(columns.grade);
 
-    console.log("Populating gradebook with data:", data);
+    // Append the row to the table
+    tableElm.appendChild(row);
+  });
 }
 
 fetchGradeData();
